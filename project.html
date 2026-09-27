@@ -28,8 +28,10 @@
             <li><a href="resume.html" class="nav-link" id="nav-resume">Resume</a></li>
           </ul>
         </nav>
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to light mode" title="Toggle dark/light mode">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to light mode"
+          title="Toggle dark/light mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -40,7 +42,8 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
@@ -55,10 +58,11 @@
       <!-- Projects Page Header -->
       <section class="resume-header">
         <div>
-          <div class="badge">Portfolio</div>
-          <h1 class="page-title">Featured <span class="gradient-text">Projects</span></h1>
+          <div class="badge">Academic Portfolio</div>
+          <h1 class="page-title"><span class="gradient-text">Featured Projects</span></h1>
           <p class="lead-text">
-            A curated showcase of applications, developer tools, and web experiments I have designed and built.
+            These are some projects I completed during my time at LSU. That both expanded my skillset
+            and furthered my knowledge of how to create different systems.
           </p>
         </div>
       </section>
@@ -66,103 +70,266 @@
       <!-- Projects Grid -->
       <section class="projects-grid" id="project-list">
 
-        <!-- Project 1 -->
-        <article class="card project-card">
-          <div class="project-thumbnail" aria-hidden="true">
-            <span>&#9889;</span>
-          </div>
-          <div class="project-body">
-            <h2 class="project-title">CloudPulse Dashboard</h2>
-            <p class="project-desc">
-              Real-time server monitoring and metrics visualization platform with custom alert configurations, webhooks,
-              and live WebSocket telemetry.
-            </p>
-            <div class="tag-list" style="margin-bottom: 20px;">
-              <span class="tag">TypeScript</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">WebSockets</span>
-              <span class="tag">Charts</span>
+        <!-- Project 1: Healthcare Cyber Risk Assessment -->
+        <article class="card project-card project-card-clickable" id="card-healthcare" tabindex="0" role="link"
+          data-doc-url="Healthcare_Sector_Risk_Assessment.pdf"
+          aria-label="View Healthcare Sector Cyber Risk Assessment PDF Document">
+
+          <div class="project-thumbnail" aria-label="Healthcare Sector Risk Assessment Slide Preview">
+            <span class="project-badge-floating">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              PDF Briefing Slide
+            </span>
+            <img src="docs/preview_healthcare.png"
+              alt="Healthcare Sector Cyber Risk Assessment NIST SP 800-30 Slide Preview" class="project-thumbnail-img"
+              loading="lazy">
+            <div class="project-thumbnail-overlay">
+              <span class="overlay-action-chip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Click to Open Document &rarr;
+              </span>
             </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-header-meta">
+              <span class="project-category">Cybersecurity &amp; IT Risk</span>
+              <span class="project-format-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                NIST SP 800-30 Assessment
+              </span>
+            </div>
+
+            <h2 class="project-title">
+              <a href="Healthcare_Sector_Risk_Assessment.pdf" target="_blank" onclick="event.stopPropagation()">
+                Healthcare Sector Cyber Risk Assessment
+              </a>
+            </h2>
+            <div class="project-subtitle">Threat Vector Analysis, Historical Breach Data &amp; Defense-in-Depth Strategy
+            </div>
+
+            <p class="project-desc">
+              Comprehensive cybersecurity risk assessment analyzing threat surfaces and vulnerabilities across the
+              medical sector under the
+              <strong>NIST SP 800-30</strong> framework. Evaluated historical healthcare breaches, modeled incident
+              frequency trends, and architected targeted mitigations.
+            </p>
+
+            <ul class="project-highlights">
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Framework:</strong> NIST SP 800-30 methodology evaluating
+                  threat likelihood and medical impact</span>
+              </li>
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Breach Investigation:</strong> Analyzed Anthem Inc. (~80M
+                  records affected), LSU Health New Orleans, and Walgreens</span>
+              </li>
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Threat Locations:</strong> Identified Network Servers,
+                  Email Spear-Phishing, and Stolen Hardware</span>
+              </li>
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Defense-in-Depth:</strong> MFA, IDS/IPS intrusion
+                  prevention, third-party vendor audits, and end-to-end data encryption</span>
+              </li>
+            </ul>
+
+            <div class="tag-list" style="margin-bottom: 24px;">
+              <span class="tag">NIST SP 800-30</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Threat Modeling</span>
+              <span class="tag">Healthcare IT / HIPAA</span>
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Defense-in-Depth</span>
+            </div>
+
             <div class="project-footer">
-              <div class="project-links">
-                <a href="#" class="icon-link" aria-label="View live demo of CloudPulse Dashboard">Live Demo &rarr;</a>
-                <a href="#" class="icon-link" aria-label="View source code of CloudPulse Dashboard">GitHub</a>
+              <div class="btn-group">
+                <a href="Healthcare_Sector_Risk_Assessment.pdf" target="_blank" class="btn btn-primary btn-sm"
+                  id="btn-view-healthcare" aria-label="Open Healthcare Sector Risk Assessment PDF in new tab"
+                  onclick="event.stopPropagation()">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                  Open Document &rarr;
+                </a>
+                <a href="Healthcare_Sector_Risk_Assessment.pdf" download="Healthcare_Sector_Risk_Assessment.pdf"
+                  class="btn btn-secondary btn-sm" id="btn-download-healthcare"
+                  aria-label="Download Healthcare Sector Risk Assessment PDF" onclick="event.stopPropagation()">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download PDF
+                </a>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Project 2 -->
-        <article class="card project-card">
-          <div class="project-thumbnail" aria-hidden="true">
-            <span>&#128170;</span>
-          </div>
-          <div class="project-body">
-            <h2 class="project-title">TaskFlow Studio</h2>
-            <p class="project-desc">
-              Collaborative kanban and task management application featuring drag-and-drop boards, markdown task
-              descriptions, and offline storage.
-            </p>
-            <div class="tag-list" style="margin-bottom: 20px;">
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML5 Drag &amp; Drop</span>
-              <span class="tag">CSS Grid</span>
-              <span class="tag">LocalStorage</span>
-            </div>
-            <div class="project-footer">
-              <div class="project-links">
-                <a href="#" class="icon-link" aria-label="View live demo of TaskFlow Studio">Live Demo &rarr;</a>
-                <a href="#" class="icon-link" aria-label="View source code of TaskFlow Studio">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </article>
+        <!-- Project 2: Nordstrom Enterprise Database & SQL -->
+        <article class="card project-card project-card-clickable" id="card-nordstrom" tabindex="0" role="link"
+          data-doc-url="TheBig5_Nordstrom_Database_Design.pdf"
+          aria-label="View Nordstrom Enterprise Database and SQL Analytics 14-Page Technical Report PDF">
 
-        <!-- Project 3 -->
-        <article class="card project-card">
-          <div class="project-thumbnail" aria-hidden="true">
-            <span>&#128065;</span>
-          </div>
-          <div class="project-body">
-            <h2 class="project-title">Aura Design System</h2>
-            <p class="project-desc">
-              A comprehensive component library and CSS design system prioritizing dark mode aesthetics, WCAG AA
-              accessibility, and micro-interactions.
-            </p>
-            <div class="tag-list" style="margin-bottom: 20px;">
-              <span class="tag">Vanilla CSS</span>
-              <span class="tag">Design Tokens</span>
-              <span class="tag">Accessibility</span>
+          <div class="project-thumbnail" aria-label="Nordstrom Enterprise Database ER Diagram and Architecture Preview">
+            <span class="project-badge-floating">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              PDF Document &bull; 14 Pages
+            </span>
+            <img src="docs/preview_nordstrom.png" alt="Nordstrom Rack ER Diagram and Relational Database Schema"
+              class="project-thumbnail-img" loading="lazy">
+            <div class="project-thumbnail-overlay">
+              <span class="overlay-action-chip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Click to Open Document &rarr;
+              </span>
             </div>
-            <div class="project-footer">
-              <div class="project-links">
-                <a href="#" class="icon-link" aria-label="View live demo of Aura Design System">Live Demo &rarr;</a>
-                <a href="#" class="icon-link" aria-label="View source code of Aura Design System">GitHub</a>
-              </div>
-            </div>
           </div>
-        </article>
 
-        <!-- Project 4 -->
-        <article class="card project-card">
-          <div class="project-thumbnail" aria-hidden="true">
-            <span>&#128269;</span>
-          </div>
           <div class="project-body">
-            <h2 class="project-title">DevSearch Engine</h2>
-            <p class="project-desc">
-              Fast developer search engine indexing official documentation, cheat sheets, and technical guides with
-              instant fuzzy filtering and keyboard shortcuts.
-            </p>
-            <div class="tag-list" style="margin-bottom: 20px;">
-              <span class="tag">JavaScript</span>
-              <span class="tag">IndexedDB</span>
-              <span class="tag">Search Index</span>
+            <div class="project-header-meta">
+              <span class="project-category">Database Architecture &amp; SQL</span>
+              <span class="project-format-tag">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                The Big 5 &bull; Technical Report
+              </span>
             </div>
+
+            <h2 class="project-title">
+              <a href="TheBig5_Nordstrom_Database_Design.pdf" target="_blank" onclick="event.stopPropagation()">
+                Nordstrom Enterprise Database &amp; SQL Analytics
+              </a>
+            </h2>
+            <div class="project-subtitle">Relational ERD, Normalized 3NF Schema &amp; 10-Query Business Intelligence
+              Suite</div>
+
+            <p class="project-desc">
+              End-to-end relational database engineered for <strong>Nordstrom Rack</strong> (~300 nationwide retail
+              locations).
+              Co-developed with "The Big 5" team at LSU, encompassing conceptual ER modeling, 3NF schema normalization,
+              full MySQL DDL creation scripts, and complex analytical queries.
+            </p>
+
+            <ul class="project-highlights">
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Architecture:</strong> Complete ER Diagram &amp; Relational
+                  Schema across 10 business entities</span>
+              </li>
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>SQL Engineering:</strong> DDL scripts (CREATE TABLE, FK
+                  constraints), data dictionary, and seed datasets</span>
+              </li>
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Analytical Matrix:</strong> 10 SQL queries with multi-table
+                  JOINs, Subqueries, HAVING clauses, and cost audits</span>
+              </li>
+              <li class="project-highlight-item">
+                <svg class="project-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="project-highlight-text"><strong>Team Project:</strong> Co-created with Kayla Goudy, Isaac
+                  Joyner, Nicholas Mwenye, and Sarah Reid</span>
+              </li>
+            </ul>
+
+            <div class="tag-list" style="margin-bottom: 24px;">
+              <span class="tag">SQL / MySQL</span>
+              <span class="tag">Relational Database Design</span>
+              <span class="tag">ER Modeling (ERD)</span>
+              <span class="tag">Normalized Schemas (3NF)</span>
+              <span class="tag">Business Intelligence</span>
+              <span class="tag">Query Optimization</span>
+            </div>
+
             <div class="project-footer">
-              <div class="project-links">
-                <a href="#" class="icon-link" aria-label="View live demo of DevSearch Engine">Live Demo &rarr;</a>
-                <a href="#" class="icon-link" aria-label="View source code of DevSearch Engine">GitHub</a>
+              <div class="btn-group">
+                <a href="TheBig5_Nordstrom_Database_Design.pdf" target="_blank" class="btn btn-primary btn-sm"
+                  id="btn-view-nordstrom" aria-label="Open Nordstrom Database Design 14-Page PDF in new tab"
+                  onclick="event.stopPropagation()">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                  Open Document &rarr;
+                </a>
+                <a href="TheBig5_Nordstrom_Database_Design.pdf" download="TheBig5_Nordstrom_Database_Design.pdf"
+                  class="btn btn-secondary btn-sm" id="btn-download-nordstrom"
+                  aria-label="Download Nordstrom Database Design PDF" onclick="event.stopPropagation()">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download PDF
+                </a>
               </div>
             </div>
           </div>
@@ -184,6 +351,37 @@
       </div>
     </div>
   </footer>
+
+  <!-- Interactive Card Navigation Script -->
+  <script>
+    document.querySelectorAll('.project-card-clickable').forEach(card => {
+      // Click handler for entire card
+      card.addEventListener('click', (e) => {
+        // If the user clicked directly on or inside an anchor or button, let that element handle it
+        if (e.target.closest('a') || e.target.closest('button')) {
+          return;
+        }
+        const docUrl = card.getAttribute('data-doc-url');
+        if (docUrl) {
+          window.open(docUrl, '_blank');
+        }
+      });
+
+      // Accessible keyboard support: Enter or Space activates the card
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          if (e.target.closest('a') || e.target.closest('button')) {
+            return;
+          }
+          e.preventDefault();
+          const docUrl = card.getAttribute('data-doc-url');
+          if (docUrl) {
+            window.open(docUrl, '_blank');
+          }
+        }
+      });
+    });
+  </script>
 
 </body>
 
