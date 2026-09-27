@@ -11,5 +11,5 @@ This tool was such a learning moment for me at first, but now I am able to use i
 
 Other than that, I hope you all enjoy the work!
 
-https://im1904.github.io/Discover-Isaac/
+https://im1904.github.io/Isaac-Website/
 
